@@ -1,0 +1,27 @@
+# Sanal ortamlar
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Model agirliklari ve islenmis veri
+*.pth
+checkpoints/*.pt
+checkpoints/*.py
+data/processed/*.pt
+data/processed/*.json
+
+# Gorsellestirme paketi -- bu projeye ait degil, repoya dahil edilmiyor
+src/viz/
+scripts/visualize.py
+scripts/goruntuleyici.py
+scripts/sohbet_dene.py
+reports/
+
+# IDE
+.idea/
+
+# Kisisel yapilacaklar notlari -- repoya gitmez
+NOTLAR.md

@@ -1,0 +1,1 @@
+Nmap (Network Mapper), ağ keşfi ve güvenlik denetimi için kullanılan ücretsiz ve açık kaynaklı bir araçtır. Sistem yöneticileri ve güvenlik uzmanları; ağdaki aktif cihazları, açık portları, çalışan servisleri ve hedef sistemlerin işletim sistemlerini tespit etmek için bu aracı kullanır.
