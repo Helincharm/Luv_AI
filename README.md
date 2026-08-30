@@ -102,11 +102,12 @@ src/
 ├── data/      Tokenizer and dataset preparation
 ├── model/     Transformer architecture
 ├── training/  Training, optimization and checkpointing
-├── inference/ Text generation
-├── cli/       Command-line interface
-└── utils/     Reproducibility and logging
-tests/         Unit tests
+├── inference/ Token sampling
+└── utils/     Reproducibility
 ```
+
+Modules for text generation, the chat interface and the test suite are listed
+under *Not yet implemented* above and will be added as they are written.
 
 ---
 
