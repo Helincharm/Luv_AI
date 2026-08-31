@@ -24,10 +24,11 @@ The project currently includes:
 * Reproducible training
 * Model and optimizer checkpointing
 * Temperature-controlled token sampling
+* Autoregressive text generation
 
 Not yet implemented:
 
-* Autoregressive text generation and the chat interface
+* The chat interface
 * BPE tokenization and a full Turkish corpus
 * Validation loss tracking and device management
 * Scaling infrastructure — learning rate scheduling, gradient clipping, mixed precision, gradient accumulation
@@ -102,12 +103,12 @@ src/
 ├── data/      Tokenizer and dataset preparation
 ├── model/     Transformer architecture
 ├── training/  Training, optimization and checkpointing
-├── inference/ Token sampling
+├── inference/ Token sampling and text generation
 └── utils/     Reproducibility
 ```
 
-Modules for text generation, the chat interface and the test suite are listed
-under *Not yet implemented* above and will be added as they are written.
+Modules for the chat interface and the test suite are listed under
+*Not yet implemented* above and will be added as they are written.
 
 ---
 
