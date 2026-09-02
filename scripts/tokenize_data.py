@@ -33,7 +33,9 @@ train_ids, val_ids = split_train_val(ids, val_ratio=0.1)
 save_encoded(train_ids, f"{PROCESSED_DIR}/train.pt")
 save_encoded(val_ids, f"{PROCESSED_DIR}/val.pt")
 
-vocab = {"stoi": tokenizer.stoi, "itos": tokenizer.itos}
+vocab = {
+    "stoi": tokenizer.stoi
+}
 with open(f"{PROCESSED_DIR}/vocab.json", "w", encoding="utf-8") as f:
     json.dump(vocab, f, ensure_ascii=False, indent=2)
 

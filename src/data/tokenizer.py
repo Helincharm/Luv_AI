@@ -25,6 +25,13 @@ class CharTokenizer:
     def vocab_size(self) -> int:
         return len(self.stoi)
 
+    @classmethod
+    def from_stoi(cls, stoi: dict[str, int]) -> "CharTokenizer":
+        tokenizer = cls("")
+        tokenizer.stoi = dict(stoi)
+        tokenizer.itos = {i: ch for ch, i in tokenizer.stoi.items()}
+        return tokenizer
+
 # Manual test
 # if __name__ == "__main__":
 #     tokenizer = CharTokenizer("selam deneme")

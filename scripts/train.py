@@ -13,6 +13,8 @@ src/ içinden gelir.
 import json
 import os
 import sys
+from dataclasses import asdict
+
 import torch
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,7 +66,7 @@ def main() -> None:
     )
 
     os.makedirs(CHECKPOINT_DIR, exist_ok=True)
-    save_checkpoint(model, optimizer, CHECKPOINT_PATH)
+    save_checkpoint(model, optimizer, CHECKPOINT_PATH, asdict(model_cfg))
 
 if __name__ == "__main__":
     main()
