@@ -29,7 +29,6 @@ NOTLAR.md
 # Henuz yazilmamis dosyalar -- tamamlandikca repoya eklenecek
 scripts/chat.py
 scripts/train_tokenizer.py
-src/cli/
 src/data/bpe_tokenizer.py
 src/utils/logger.py
 tests/

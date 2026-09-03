@@ -25,10 +25,11 @@ The project currently includes:
 * Model and optimizer checkpointing
 * Temperature-controlled token sampling
 * Autoregressive text generation
+* Interactive terminal chat loop
 
 Not yet implemented:
 
-* The chat interface
+* The chat entry point (`scripts/chat.py`)
 * BPE tokenization and a full Turkish corpus
 * Validation loss tracking and device management
 * Scaling infrastructure — learning rate scheduling, gradient clipping, mixed precision, gradient accumulation
@@ -104,11 +105,12 @@ src/
 ├── model/     Transformer architecture
 ├── training/  Training, optimization and checkpointing
 ├── inference/ Token sampling and text generation
+├── cli/       Terminal chat loop
 └── utils/     Reproducibility
 ```
 
-Modules for the chat interface and the test suite are listed under
-*Not yet implemented* above and will be added as they are written.
+The chat entry point and the test suite are listed under *Not yet implemented*
+above and will be added as they are written.
 
 ---
 
